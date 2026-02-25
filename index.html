@@ -3,41 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Despliegue Multiplataforma | Evaluación</title>
+    <title>Interfaz Multiplataforma</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>Validación de Interfaz Multiplataforma</h1>
-            <div class="badge">Estado: <span id="status">En línea</span></div>
+            <h1>Interfaz Multiplataforma</h1>
+            <div class="status-container">
+                <span class="label">Estado:</span>
+                <span class="status-pill">En línea</span>
+            </div>
         </header>
 
         <main class="card">
-            <h2>Información del Entorno</h2>
+            <h3>Información del Entorno</h3>
             <p>La interfaz se ha adaptado al siguiente dispositivo:</p>
             
             <div id="platform-info" class="info-box">
-                Cargando datos...
+                Detectando sistema...
             </div>
 
             <div class="metrics">
-                <p><strong>Resolución de pantalla:</strong> <span id="resolution"></span></p>
+                <p><strong>Resolución:</strong> <span id="resolution"></span></p>
                 <p><strong>Navegador:</strong> <span id="browser"></span></p>
             </div>
         </main>
 
         <section class="evidence">
             <h3>Evidencias de Despliegue</h3>
-            <ul>
-                <li>✅ Repositorio en GitHub sincronizado.</li>
-                <li>✅ Hosting en Netlify habilitado.</li>
-                <li>✅ Diseño Responsivo (Mobile/Desktop).</li>
-            </ul>
+            <div class="check-item">✅ Repositorio sincronizado</div>
+            <div class="check-item">✅ Hosting en Netlify habilitado</div>
+            <div class="check-item">✅ Diseño Responsivo</div>
         </section>
 
         <footer>
-            <p>&copy; 2026 - Programa de Evidencia de Despliegue</p>
+            <p>© 2026 - Programa de Evidencia de Despliegue</p>
         </footer>
     </div>
     <script src="script.js"></script>
