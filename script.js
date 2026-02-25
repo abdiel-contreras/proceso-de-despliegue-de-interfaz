@@ -3,19 +3,16 @@ document.addEventListener('DOMContentLoaded', () => {
     const resolutionBox = document.getElementById('resolution');
     const browserBox = document.getElementById('browser');
 
-    // 1. Detectar Plataforma
-    const platform = navigator.platform;
-    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
     
-    platformBox.innerHTML = isMobile ? "📱 Dispositivo Móvil Detectado" : `💻 Escritorio (${platform})`;
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    platformBox.innerHTML = isMobile ? "📱 Dispositivo Móvil Detectado" : "💻 Escritorio Detectado";
 
-    // 2. Obtener Resolución
+    
     const updateMetrics = () => {
         resolutionBox.innerText = `${window.innerWidth} x ${window.innerHeight} px`;
     };
 
-    // 3. Obtener Navegador
-    browserBox.innerText = navigator.vendor || "Navegador Estándar";
+    browserBox.innerText = "Google Chrome / Navegador Web";
 
     window.addEventListener('resize', updateMetrics);
     updateMetrics();
